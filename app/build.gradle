@@ -1,29 +1,5 @@
 apply plugin: 'com.android.library'
 
-ext {
-    bintrayRepo = 'ATWDP'
-    bintrayName = 'ATWDP'
-
-    publishedGroupId = 'org.chmoder.atwdp'
-    libraryName = 'ATWDP'
-    artifact = 'ATWDP'
-
-    libraryDescription = 'Android Things Wireless Device Provisioning'
-
-    siteUrl = 'https://github.com/chmoder/ATWDP'
-    gitUrl = 'https://github.com/chmoder/ATWDP.git'
-
-    libraryVersion = '0.1.0'
-
-    developerId = 'chmoder'
-    developerName = 'Thomas Cross'
-    developerEmail = 'tom.bz2@gmail.com'
-
-    licenseName = 'The Apache Software License, Version 2.0'
-    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-    allLicenses = ["Apache-2.0"]
-}
-
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -52,5 +28,4 @@ dependencies {
 }
 
 apply plugin: 'realm-android'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+apply from: 'publish.gradle'

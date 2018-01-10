@@ -7,7 +7,7 @@ This is an android library to help connect your android things device to a WiFi 
 ```groovy
 dependencies {
   ...
-  compile 'org.chmoder.atwdp:ATWDP:0.1.0'
+  compile 'org.chmoder.atwdp:ATWDP:0.2.0'
 }
 ```
 ```java
